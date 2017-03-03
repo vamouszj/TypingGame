@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>打字游戏</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/BaseTool.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body onload="init()">
+	<div class="header">
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">			
+				<a href="#" class="navbar-brand"><strong>TyperGame</strong></a>
+				<div class="collapse navbar-collapse" id="responsive-navbar">
+
+
+					<div class="profile navbar-left">
+						<ul id="gameInitChoose" class="nav navbar-nav">
+							<li><a href="#" id="SettingBtn">游戏设置</a></li>
+							<li><a href="#" id="StartBtn">开始游戏</a></li>
+						</ul>
+						<ul id="gameProcessChoose" class="nav navbar-nav">
+							<li><a href="#" id="PauseBtn">暂停</a></li>
+							<li><a href="#" id="ReStartBtn">重新开始</a></li>
+						</ul>												
+					</div>
+					<ul id="gameStatus" class="nav navbar-nav list-info  navbar-right">
+						<li id="showscore">分数：100</li>
+						<li id="showlevel">等级：3</li>
+						<li id="showlife">生命：3</li>
+					</ul>
+
+				</div>
+			</div>
+		</nav>	
+		
+	</div>
+	<div class="bodyer">
+		<div id="Sllsetting" class="setting">
+			<ul class="list-unstyled">
+				<li class="title">选择游戏类型</li>
+				<li>分数
+					<label><input type="radio" name="score">100</label>&nbsp;
+					<label><input type="radio" name="score">200</label>&nbsp;
+					<label><input type="radio" name="score">300</label>&nbsp;
+				</li>
+				<li>等级
+					<label><input type="radio" name="level">1</label>&nbsp;
+					<label><input type="radio" name="level">3</label>&nbsp;
+					<label><input type="radio" name="level">5</label>&nbsp;
+				</li>
+				<li>生命
+					<label><input type="radio" name="life">1</label>&nbsp;
+					<label><input type="radio" name="life">3</label>&nbsp;
+					<label><input type="radio" name="life">5</label>&nbsp;
+				</li>	
+				<li>
+					<input id="ok" type="button" name="ok" class="btn" value="确定">
+					<input id="notOk" type="button" name="reset" class="btn" value="取消">
+				</li>			
+			</ul>
+		</div>
+		<div class="container-fluid">
+			<img src="img/bg.jpg" class="left-img"/>	
+		</div>
+
+	</div>
+	<div class="footer">
+		<div>
+			<ul class="list-inline">
+				<li>Copyright © 2016 Vamous. 版权所有</li>
+			</ul>			
+		</div>
+	</div>
+</body>
+</html>
